@@ -1,5 +1,3 @@
-require File.dirname(__FILE__) + '/../helper'
-
 # Precondition steps / Given
 steps_for :<%= story_name %> do
   Given "Ruby is amazing piece of software design" do
