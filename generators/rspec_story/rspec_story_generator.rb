@@ -13,10 +13,10 @@ class RspecStoryGenerator < Rails::Generator::NamedBase
       m.directory File.join("stories", "steps")
 
       # Plain text story template
-      m.template 'plain_text_story.txt', File.join('stories', "#{story_name}")
+      m.template 'plain_text_story.txt', File.join('stories', "#{story_name}_story")
 
       # Main story file
-      m.template 'story.rb', File.join('stories', "#{story_name}.rb")
+      m.template 'story.rb', File.join('stories', "#{story_name}_story.rb")
 
       # Story steps file
       m.template 'story_steps.rb', File.join('stories', "steps", "#{story_name}_steps.rb")
