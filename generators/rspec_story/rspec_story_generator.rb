@@ -11,6 +11,7 @@ class RspecStoryGenerator < Rails::Generator::NamedBase
   def manifest
     recorded_manifest = record do |m|
       m.directory File.join("stories", "steps")
+      m.directory File.join("stories", "stories")
 
       # Plain text story template
       m.template 'plain_text_story.txt', File.join('stories/stories', "#{story_name}_story.story")
